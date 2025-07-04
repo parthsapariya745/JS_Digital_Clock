@@ -11,6 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
+  padding-inline: 3vw;
 }
 .clock-container {
   background: #0a0a0a;
@@ -137,6 +138,9 @@ body {
   .clock-container {
     padding: 20px 30px;
   }
+  .clock-display {
+    margin-top: 20px;
+  }
   .time-segment {
     font-size: 2rem;
     min-width: 60px;
@@ -151,5 +155,18 @@ body {
   .date-display {
     font-size: 1rem;
     margin-top: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .clock-container{
+    width: 100%;
+  }
+  .clock-display {
+    flex-wrap: wrap;
+  }
+  .am-pm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
